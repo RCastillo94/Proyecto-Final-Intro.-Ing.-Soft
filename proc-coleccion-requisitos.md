@@ -33,6 +33,7 @@ flowchart TD
     G1 --> G3["-Evaluacion
     -Analisis de impacto
     -Revision y aprobacion" ]
+```
 
     G2 --> H[Finalización del Proceso]
 
