@@ -1,5 +1,3 @@
-### proceso de recoleccoion de requisitos 
-```mermaid
 flowchart TD
     A[Inicio del Proyecto] --> B[Identificación del Cliente o Usuario]
     B --> C[Definición de Objetivos]
@@ -17,7 +15,12 @@ flowchart TD
     E --> E2[Priorización de Requisitos]
 
     E1 --> F[Documentación de Requisitos -  Jira]
-    E2 --> F
+    E2 --> E3["-Entender objetivo negocio.
+    - Involucrar a los stakeholdres. 
+    -Clasificar requisitos. 
+    -Impacto y valor. 
+    - Utilizacion del metodo MoSCoW."]
+    E3 --> F 
 
     F --> F1[Creación de Especificaciones]
     F --> F2[Validación y Aprobación de Requisitos]
