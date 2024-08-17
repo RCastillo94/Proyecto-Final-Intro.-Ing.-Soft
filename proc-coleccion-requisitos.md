@@ -1,4 +1,5 @@
-```Mermaid
+### FLOWCHART
+```mermaid
 flowchart TD
     A[Inicio del Proyecto] --> B[Identificación del Cliente o Usuario]
     B --> C[Definición de Objetivos]
@@ -33,9 +34,10 @@ flowchart TD
     G1 --> G3["-Evaluacion
     -Analisis de impacto
     -Revision y aprobacion" ]
-```
 
     G2 --> H[Finalización del Proceso]
 
     H --> H1[Revisión Final]
     H --> H2[Aprobación y Cierre]
+
+```
