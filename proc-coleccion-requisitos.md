@@ -1,19 +1,36 @@
 ### proceso de recoleccoion de requisitos 
-
 ```mermaid
-flowchart TD;
-    A[Inicio] --> B[reunirse con steakholders];
-    B --> C[Establecer conexión a la base de datos SQL];
-    C -->|Conexión exitosa| D[Ejecutar consulta SQL y cargar datos en DataFrame];
-    C -->|Conexión fallida| E[Mostrar error y cerrar conexión];
-    D --> F[Procesar datos];
-    F --> G[Filtrar datos por fecha y eliminar filas no deseadas];
-    G --> H[Guardar datos procesados en un archivo Excel];
-    H --> I[Llamar a la función send_email con la ruta del archivo];
-    I --> J[Crear contenedor de mensaje];
-    J --> K[Adjuntar archivo Excel al correo];
-    K --> L[Conectar al servidor SMTP];
-    L -->|Conexión exitosa| M[Enviar correo electrónico];
-    L -->|Conexión fallida| N[Mostrar error de envío];
-    M --> O[Mostrar mensaje de éxito];
-    O --> P[Fin];
+flowchart TD
+    A[Inicio del Proyecto] --> B[Identificación del Cliente o Usuario]
+    B --> C[Definición de Objetivos]
+    C --> D[Recolección de Información con stakeholders]
+
+    D --> D1[Entrevistas y Encuestas]
+    D --> D2[Revisión de Documentación Existente]
+    D --> D3[Observación Directa]
+
+    D1 --> E[Análisis de Requisitos]
+    D2 --> E
+    D3 --> E
+
+    E --> E1[Identificación de Requisitos Funcionales y No Funcionales]
+    E --> E2[Priorización de Requisitos]
+
+    E1 --> F[Documentación de Requisitos -  Jira]
+    E2 --> F
+
+    F --> F1[Creación de Especificaciones]
+    F --> F2[Validación y Aprobación de Requisitos]
+
+    F2 --> G[Gestión de Cambios en los Requisitos]
+
+    G --> G1[Establecimiento de un Proceso de Control de Cambios]
+    G --> G2[Comunicación de Cambios]
+    G1 --> G3["-Evaluacion
+    -Analisis de impacto
+    -Revision y aprobacion" ]
+
+    G2 --> H[Finalización del Proceso]
+
+    H --> H1[Revisión Final]
+    H --> H2[Aprobación y Cierre]
