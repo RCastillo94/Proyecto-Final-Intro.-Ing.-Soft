@@ -1,3 +1,4 @@
+```Mermaid
 flowchart TD
     A[Inicio del Proyecto] --> B[Identificación del Cliente o Usuario]
     B --> C[Definición de Objetivos]
