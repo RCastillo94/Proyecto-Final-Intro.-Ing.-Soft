@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD;
-    A[Inicio] --> B[Leer configuración desde config.json];
+    A[Inicio] --> B[reunirse con steakholders];
     B --> C[Establecer conexión a la base de datos SQL];
     C -->|Conexión exitosa| D[Ejecutar consulta SQL y cargar datos en DataFrame];
     C -->|Conexión fallida| E[Mostrar error y cerrar conexión];
